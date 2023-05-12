@@ -1,0 +1,200 @@
+:root { /*Variáveis gerais*/
+    --cor-primaria:black;
+    --cor-secundaria:#F5EBEB;
+    --cor-terciaria:#d5b4b4e1;
+    --cor-background:#d5b4b4c9;
+
+    --fonte-primaria: 'Be Vietnam Pro', sans-serif;
+    --fonte-links: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.destaque-titulo {
+    color: var(--cor-terciaria);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.especialidades-paragrafo {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    /*width: 615px;*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__titulo {
+    font-size: 2.9rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__texto {
+    font-size: 1.29rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; 
+}
+
+.apresentacao_links_link {
+    /*width: 388px;*/
+    width: 50%;
+    border: 3px solid var(--cor-terciaria);
+    text-align: center;
+    border-radius: 16px; /*Borda mais arredondada quanto maior o número */
+    font-size: 1.4rem;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-links);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao_links_link:hover {
+    background-color: var(--cor-background); /*Mudar o fundo ao passar o mouse por cima*/
+}
+
+.apresentacao_links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.rodape {
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.apresentacao_imagem {
+   width: 50%;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao_topicos_curriculo {
+    font-size: 1.8rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+ul.disc {
+	list-style-type: disc;
+    font-size: 1.22rem;
+    font-family: var(--fonte-primaria);
+    padding: 0% 4%;
+}
+
+.apresentacao__conteudo_curriculo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 10%;
+}
+
+.apresentacao__titulo_sobremim {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    } 
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao_imagem {
+        width: 70%;
+    }
+
+    .cabecalho_menu_link {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__titulo {
+        font-size: 2.5rem;
+    }
+
+    .apresentacao_links_link {
+        width: 45%;
+    }
+
+    .apresentacao_topicos_curriculo {
+        font-size: 1.4rem;
+    }
+
+    .apresentacao__conteudo_curriculo {
+        width: 85%;
+    }
+
+    .apresentacao__texto {
+        font-size: 1.1rem;
+    }
+
+    .ul.disc {
+        font-size: 1.1rem;
+    }
+}
